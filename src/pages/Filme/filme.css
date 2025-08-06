@@ -1,0 +1,107 @@
+.lista-filmes {
+    max-width: 960px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 12px;
+    padding: 0 15px;
+}
+
+.lista-filmes article {
+    flex: 1 1 300px;
+    max-width: 300px; 
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--sombra-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-filmes article:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-card-hover);
+}
+
+.lista-filmes strong {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: px;
+    color: #ffff;
+    font-weight: 700;
+    display: block;
+    padding: 10px;
+    background-color: #0077B6;
+    border-radius: 5px;
+}
+
+.lista-filmes img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.lista-filmes p {
+    font-size: 16px;
+    color: var(--cor-texto-descricao);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.lista-filmes a {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #0077B6;
+    color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.lista-filmes a:hover {
+    background-color: #0d58b9;
+    transform: scale(1.02);
+    color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    .lista-filmes {
+        margin: 15px auto;
+        padding: 0 10px;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .lista-filmes article {
+        padding: 15px;
+        max-width: 100%; 
+    }
+
+    .lista-filmes strong {
+        font-size: 20px;
+    }
+
+    .lista-filmes p {
+        font-size: 14px;
+    }
+
+    .lista-filmes a {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}
