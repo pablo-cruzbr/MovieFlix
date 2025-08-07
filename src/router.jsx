@@ -10,9 +10,7 @@ function RoutesApp() {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path="/filme/:id" element={<Filme/>}/>
-               
             </Routes>
-             <Filme/>
         </BrowserRouter>
     )
 
