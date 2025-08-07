@@ -11,6 +11,7 @@ interface Filmes{
 
 function Filme() {
   const [filmes, setFilmes] = useState<Filmes[]>([]);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function loadFilmes() {
@@ -28,11 +29,20 @@ function Filme() {
     }
     
     loadFilmes();
-    
+    setLoading(false)
   }, []);
+
+  if(loading) {
+    return(
+      <div className="loading">
+        <h2>Carregando Filmes...</h2>
+      </div>
+    )
+  }
 
   return (
     <div className="container">
+      
       <div className="lista-filmes">
         {filmes.map((filme) => {
           return(

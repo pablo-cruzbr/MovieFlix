@@ -11,6 +11,13 @@
     padding: 0 15px;
 }
 
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
 .lista-filmes article {
     flex: 1 1 300px;
     max-width: 300px; 
