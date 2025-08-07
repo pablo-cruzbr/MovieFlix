@@ -25,7 +25,7 @@ function Filme() {
      
       console.log(response.data.results.slice(0, 14));
       
-      setFilmes(response.data.results.slice(0, 12));
+      setFilmes(response.data.results.slice(0, 15));
     }
     
     loadFilmes();
