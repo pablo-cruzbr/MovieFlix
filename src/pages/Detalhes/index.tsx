@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { useParams } from "react-router-dom";
-
+import './detalhes.css'
 function Detalhes() {
   const { id } = useParams();
   const [filme, setFilme] = useState<any | null>(null);
@@ -38,15 +38,14 @@ function Detalhes() {
 
   if (!filme) {
     return (
-      <div className="container">
+      <div className="detalhes-container">
         <h2>Filme não encontrado.</h2>
       </div>
     );
   }
 
   return (
-    <div className="container">
-      <div className="detalhes-filme">
+    <div className="detalhes-container">
         <h1>{filme.title}</h1>
         <img
           src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`}
@@ -54,7 +53,14 @@ function Detalhes() {
         />
         <h3>Sinopse</h3>
         <span>{filme.overview}</span>
-      </div>
+        <h4>Avaliação: {filme.vote_average} / 10</h4>
+
+        <div className="area-buttons">
+          <button>Salvar</button>
+          <button>
+            <a href="#">Trailer</a>
+          </button>
+        </div>
     </div>
   );
 }

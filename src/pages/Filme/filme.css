@@ -43,7 +43,7 @@
     display: block;
     padding: 10px;
     width: 100%;
-    background-color: #0077B6;
+    background-color: #1a1a1a;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     display: block;
@@ -79,7 +79,7 @@
     padding: 14px 0;
     font-size: 18px;
     text-align: center;
-    background-color: #0077B6;
+    background-color: #e50914;
     color: #ffff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-decoration: none;
@@ -89,7 +89,7 @@
 }
 
 .lista-filmes a:hover {
-    background-color: #0d58b9;
+    background-color: #e50914;
     transform: scale(1.02);
     color: aliceblue;
 }

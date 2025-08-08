@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link } from "react-router-dom";
 import "./filme.css";
+
 interface Filmes{
  id: string;
  title: string;
  overview: string;
  poster_path: string;
+ vote_average: string;
 }
 
 function Filme() {
@@ -25,7 +27,7 @@ function Filme() {
      
       console.log(response.data.results.slice(0, 14));
       
-      setFilmes(response.data.results.slice(0, 15));
+      setFilmes(response.data.results.slice(0, 20));
     }
     
     loadFilmes();
