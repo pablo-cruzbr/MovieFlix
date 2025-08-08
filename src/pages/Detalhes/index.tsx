@@ -58,7 +58,9 @@ function Detalhes() {
         <div className="area-buttons">
           <button>Salvar</button>
           <button>
-            <a href="#">Trailer</a>
+            <a href={`https://youtube.com/results?search_query=${filme.title}`} target="_blank" rel="noreferrer">
+      Trailer
+    </a>
           </button>
         </div>
     </div>
