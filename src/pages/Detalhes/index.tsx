@@ -46,6 +46,23 @@ function Detalhes() {
     );
   }
 
+  function salvarFilme(){
+    const minhaLista = localStorage.getItem("@primeflix");
+
+   let filmesSalvos = JSON.parse(minhaLista || '[]');
+
+    let hashFilme = filmesSalvos.some( (filmesSalvos) => filmesSalvos.id === filme.id)
+
+    if(hashFilme){
+      alert("ESSE FILME JÁ ESTÁ NA LISTA");
+      return;
+    }
+
+    filmesSalvos.push(filme);
+    localStorage.setItem("primeflix", JSON.stringify(filmesSalvos));
+    alert("FILME SALVO COM SUCESSO")
+  }
+
   return (
     <div className="detalhes-container">
         <h1>{filme.title}</h1>
@@ -58,7 +75,7 @@ function Detalhes() {
         <h4>Avaliação: {filme.vote_average} / 10</h4>
 
         <div className="area-buttons">
-          <button>Salvar</button>
+          <button onClick={salvarFilme}>Salvar</button>
           <button>
             <a href={`https://youtube.com/results?search_query=${filme.title}`} target="_blank" rel="noreferrer">
       Trailer
