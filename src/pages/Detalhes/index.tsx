@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import './detalhes.css'
 function Detalhes() {
   const { id } = useParams();
   const [filme, setFilme] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function loadFilme() {
@@ -22,6 +23,7 @@ function Detalhes() {
         .catch(() => {
           console.log("Filme não encontrado.");
           setLoading(false);
+          navigate("/", {replace: true})
         });
     }
 
