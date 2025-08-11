@@ -1,3 +1,14 @@
+- Inicialização:
 npm run dev
+
+- Local Storage
+npm install reactjs-localstorage
+
 - Axios
+ npm install axios
+
 - Routes
+npm i react-router
+
+- Toastify
+npm install --save react-toastify
