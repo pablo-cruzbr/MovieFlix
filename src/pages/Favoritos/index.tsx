@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import './favoritos.css';
+import { toast} from "react-toastify";
 
 interface Filme {
   id: number;
@@ -18,7 +19,7 @@ function Favoritos() {
     setFilmes(filtroFilmes);
     localStorage.setItem("@primeflix", JSON.stringify(filtroFilmes));
   }
-
+  toast.success("FILME EXCLUÍDO COM SUCESSO!")
   useEffect(() => {
     const minhaLista = localStorage.getItem("@primeflix");
     setFilmes(JSON.parse(minhaLista || '[]'));
@@ -28,8 +29,8 @@ function Favoritos() {
     <div className="movie-list-container">
       <h1 className="movie-list-title">Meus Filmes</h1>
 
-      {filmes.length === 0 && <span> Você não possui nenhum filme salvo </span>}
-      
+    
+
       <ul className="movie-list">
         {filmes.length === 0 && <span className="empty-movie-list-message">Você não tem nenhum filme salvo.</span>}
         {filmes.map((item) => {

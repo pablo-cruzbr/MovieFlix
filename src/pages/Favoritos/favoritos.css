@@ -14,6 +14,10 @@
     color: #777;
 }
 
+.movie-list span{
+    text-align: center;
+}
+
 .movie-list {
     width: 90%;
     max-width: 720px;
