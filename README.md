@@ -1,6 +1,8 @@
 
-<img src="src/components/MovieFlix.png" alt="MovieFlix" width="850" align="center">
-# MovieFlix
+<img src="src/components/projeto.png" alt="MovieFlix" width="850" align="center">
+
+MovieFlix
+
 Uma aplicação web de filmes em React consumindo dados de uma API externa: TMDB API. 
 O usuário pode ver os filmes mais populares, ver detalhes, salvar os filmes para lista de favoritos e buscar trailers sendo redirecionado no youtube.
 
