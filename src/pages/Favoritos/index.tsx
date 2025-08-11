@@ -19,28 +19,28 @@ function Favoritos() {
     }, []);
 
     return (
-        <div className="meus-filmes">
-            <h1>Meus Filmes</h1>
+         <div className="movie-list-container"> {/* Alterado */}
+        <h1 className="movie-list-title">Meus Filmes</h1> {/* Alterado */}
 
-            <ul>
-                {filmes.length === 0 && <span>Você não tem nenhum filme salvo.</span>}
+        <ul className="movie-list"> {/* Alterado */}
+            {filmes.length === 0 && <span className="empty-movie-list-message">Você não tem nenhum filme salvo.</span>} {/* Alterado */}
 
-                {filmes.map((item) => {
-                    return (
-                        <li key={item.id}>
-                            <span>{item.title}</span>
+            {filmes.map((item) => {
+                return (
+                    <li key={item.id} className="movie-list-item"> {/* Alterado */}
+                        <span className="movie-title">{item.title}</span> {/* Alterado */}
 
-                            <div>
-                                <Link to={`/detalhes/${item.id}`}> Ver detalhes</Link>
-                                <button>Excluir</button>
-                            </div>
-                        </li>
-                    );
-                })}
-            </ul>
-            
-            <Link to="/">Veja todos Filmes!</Link>
-        </div>
+                        <div className="movie-actions"> {/* Alterado */}
+                            <Link to={`/detalhes/${item.id}`} className="movie-details-link"> Ver detalhes</Link> {/* Alterado */}
+                            <button className="movie-delete-button">Excluir</button> {/* Alterado */}
+                        </div>
+                    </li>
+                );
+            })}
+        </ul>
+
+        <Link to="/" className="view-all-link">Veja todos Filmes!</Link> {/* Alterado */}
+    </div>
     );
 }
 
