@@ -1,6 +1,8 @@
 
-<img src="src/components/MovieFlix.png" alt="MovieFlix" width="850" align="center">
-# MovieFlix
+<img src="src/components/projeto.png" alt="MovieFlix" width="850" align="center">
+
+MovieFlix
+
 Uma aplicação web de filmes em React consumindo dados de uma API externa: TMDB API. 
 O usuário pode ver os filmes mais populares, ver detalhes, salvar os filmes para lista de favoritos e buscar trailers sendo redirecionado no youtube.
 
@@ -10,8 +12,8 @@ O usuário pode ver os filmes mais populares, ver detalhes, salvar os filmes par
 Este projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas essenciais:
 
 * **React:** A principal biblioteca para a construção da interface de usuário.
-* **React Router DOM:** Para gerenciar a navegação e o roteamento das páginas da aplicação, permitindo uma experiência de usuário fluida sem recarregar a página.
-* **Axios:** Uma biblioteca para fazer requisições HTTP de forma simples e eficiente, usada para buscar dados de APIs externas.
+* **React Router DOM:** Para gerenciar a navegação e o roteamento das páginas da aplicação.
+* **Axios:** Uma biblioteca para fazer requisições HTTP de forma simples, usada para buscar dados de APIs externas.
 * **React Toastify:** Uma ferramenta para exibir notificações personalizadas e fáceis de usar, melhorando o feedback para o usuário (ex: "Filme salvo com sucesso!").
 * **Local Storage (via React Hooks):** Utilizado para persistir dados no navegador, como a lista de filmes favoritos, garantindo que as informações não sejam perdidas ao recarregar a página.
 
@@ -28,7 +30,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 2.  **Instale as dependências:**
     ```bash
-    cd [nome-do-seu-repositorio]
+    cd MovieFlix
     npm install
     ```
 
