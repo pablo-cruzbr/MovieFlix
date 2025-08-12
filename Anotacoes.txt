@@ -1,14 +1,19 @@
-- Inicialização:
+Foram utilizados as seguintes bibliotecas:
+
+1 - Inicialização: Inicializar o projeto
 npm run dev
 
-- Local Storage
+2 - Local Storage: usado para armazenar criação de listas, inclusão e exclusão de items do localStorage do navegador.
+
 npm install reactjs-localstorage
 
-- Axios
+3 - Axios: Para fazer Requisições HTTP;
  npm install axios
 
-- Routes
-npm i react-router
+4 - React Routes: para navegação de paginas;
+npm install react-router
 
-- Toastify
+5 - Toastify: para 
 npm install --save react-toastify
+
+
