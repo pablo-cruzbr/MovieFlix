@@ -7,6 +7,7 @@ Uma aplicação web de filmes em React consumindo dados de uma API externa: TMDB
 O usuário pode ver os filmes mais populares, ver detalhes, salvar os filmes para lista de favoritos e buscar trailers sendo redirecionado no youtube.
 
 ## Demo do Projeto: 
+Demo do Projeto:
 <a href="https://pablo-cruzbr.github.io/MovieFlix/" target="_blank">Clique aqui para ver a demo</a>
 
 ## Tecnologias e Bibliotecas
